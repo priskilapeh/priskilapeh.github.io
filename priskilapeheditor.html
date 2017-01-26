@@ -22,14 +22,15 @@
 	text-align: center;
 	border: 2px solid black;
 	margin: 1em auto 0;
-	font: bold 110% sans-serif;
+	font: bold 130% sans-serif;
 }
 </style>
 <base target="_parent">
+<bgsound src="https://www.youtube.com/embed/Bk_7wUR2Wdg&list=RDBk_7wUR2Wdg" loop="-1">
 </head>
-<body>
-<div id="autocolor"><marquee scrollamount="4">
-Welcome to Priskila Peh Photos Editor with Adobe Aviary</marquee>
+<body background="air1.gif" style="background-attachment: fixed">
+<div id="autocolor"><b><marquee scrollamount="4">
+Welcome to Priskila Peh Photos Editor with Adobe Aviary</marquee></blink></b>
 </div>
 <script type="text/javascript">
 (function(){
@@ -39,13 +40,16 @@ Welcome to Priskila Peh Photos Editor with Adobe Aviary</marquee>
 	hexalen = hexacode.length;
 	function auto(){
 		el.backgroundColor = hexacode[counter = ++counter % hexalen];
+		el.fontColor = hexacode[counter = ++counter % hexalen];
 	}
 	setInterval(auto, 1000);
 })();
 </script>
 <br>
-<iframe name="I1" height="700" width="100%" style="border:2px solid grey;" title="Priskila Peh Photos Editor" border="0" frameborder="0" src="https://www.aviary.com/" scrolling="no" marginheight="30" marginwidth="20" align="middle">
+<div style="text-align:center;">
+<iframe name="I1" height="700" width="100%" style="border:2px solid grey;" title="Priskila Peh Photos Editor" border="0" frameborder="0" noresize src="https://www.aviary.com/" scrolling="no" marginheight="30" marginwidth="20" vertical-align:bottom>
 Your browser does not support inline frames or is currently configured not to display inline frames.
 </iframe>
-</body>
+</div>
+&nbsp;</body>
 </html>
